@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+  xmlns:p="http://primefaces.org/ui">
+  
+<h:head>  
+<title>Growl Messages</title>  
+<ui:include src="header.xhtml" /> 
+<h:outputStylesheet name="/css/style.css" library="css" />
+
+</h:head>  
+<h:body> 
+
+
+
+<center>
+ <h:form>  
+	<p:growl id="growl" var="growl" showDetail="true" sticky="true" />
+	  <center><h3>User login</h3></center>
+	  
+	<p:panel visible="true">  
+	<h:panelGrid columns="2" cellpadding="5">  
+		<p:outputLabel for="username" value="User Name: " />  
+		<p:inputText id="username" value="#{growl.username}" required="true" requiredMessage="username should not be blank"/>  
+	</h:panelGrid>  
+	<h:panelGrid columns="2" cellpadding="5">  
+		<p:outputLabel for="password" value="Password: " />  
+		<p:password id="password" value="#{growl.password}" required="true" />  
+	</h:panelGrid>  
+	<p:commandButton styleClass="commandButton" type="submit"
+	 value="login" actionListener="#{growl.displayMessage}" update="growl" />  
+</p:panel> 
+
+</h:form>
+</center>  
+<h5 style="margin-bottom:-10">
+<ui:include src="footer.xhtml" />
+</h5>
+</h:body>  
+
+
+</html>  

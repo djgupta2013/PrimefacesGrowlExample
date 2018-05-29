@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:f="http://xmlns.jcp.org/jsf/core"
+  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+  xmlns:p="http://primefaces.org/ui">
+
+
+<h:head>
+<link href="css/changePassword.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gail (India) Limited</title>
+<ui:include  src="header.xhtml"/>
+</h:head>
+<h:body>
+	
+	
+	<div class="editProfileBox">
+		<h2>Edit Profile</h2>
+
+		<div class="editProfileaAccording">
+		<div class="HeadingAccording NameTab displayName"></div>
+		<div id="togleChangePawsHed" class="HeadingAccording bdrNoneBottom">
+		
+		
+		
+<h:form>            
+    <h:outputLink  value="javascript:void(0)" onclick="PF('dlg').show();" styleClass="tableColumnHeader">
+    <h:graphicImage url="images/openIcon.png" styleClass="OpenTab"></h:graphicImage>
+       Change Password
+    </h:outputLink>
+ 
+    <p:growl id="growl" sticky="true" showDetail="true" life="3000" />
+ 
+    <p:dialog  header="Change Password" widgetVar="dlg" styleClass="bdrNoneBottom"  resizable="false " modal="true" showEffect="clip" hideEffect="clip"
+    				position="center">
+        <h:panelGrid columns="2"  cellpadding="7">
+           <h:outputLabel for="username" value="" />
+            <p:password id="oldpassword" value="#{userLoginView.username}" required="true" placeholder="old password" label="username" />
+ 			<h:outputLabel for="username" value="" />
+            <p:password id="newpassword" value="#{userLoginView.password}" required="true" placeholder="new password" label="password" />
+            <h:outputLabel for="username" value="" />
+            <p:password id="re-newpassword" value="#{userLoginView.password}" required="true" placeholder="re-new password" label="password" />
+ 
+            <f:facet name="footer">
+                <p:commandButton value="Submit" update="growl" actionListener="#{userLoginView.login}"
+                                 oncomplete="handleLoginRequest(xhr, status, args)" />
+                <p:button outcome="edit-profile" value="Cancel" />
+								
+            </f:facet>  
+            
+        </h:panelGrid>
+    </p:dialog>
+</h:form>
+
+		</div>
+		
+		</div>
+	</div>
+
+<script type="text/javascript">
+    function handleLoginRequest(xhr, status, args) {
+        if(args.validationFailed || !args.loggedIn) {
+        	
+            PF('dlg').jq.effect("shake", {times:5}, 100);
+        }
+        else {
+            PF('dlg').hide();
+            $('#loginLink').fadeOut();
+        }
+    }
+</script>
+<div class="Changefooter">
+		Privacy Policy | Copyright@2018 GAIL India Limited. All Rights Reserved
+	 </div>
+</h:body>
+</html>

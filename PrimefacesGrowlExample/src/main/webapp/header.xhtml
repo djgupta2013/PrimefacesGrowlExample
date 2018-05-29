@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:f="http://xmlns.jcp.org/jsf/core"
+  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+  xmlns:p="http://primefaces.org/ui">
+
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<title></title>
+</h:head>
+<h:body>
+<div class="headerMC">
+
+<h:outputLink style="text-decoration: none;" value="#" title="GAIL - Gas Nomination" >
+<div class="gail-logo">
+		<h:graphicImage  url="images/GAIL-Logo-inner.png" alt="Gail Logo" width="76" height="56" />
+	<div class="gailTagLine1">
+		<p:outputLabel styleClass="gailTagLine1" value="Gail (India) Limited"/>
+	</div>
+	<div class="gailTagLine2">
+		 <p:outputLabel    >
+		 India's
+		 <span>Youngest</span>
+		 Maharatna</p:outputLabel>
+	</div>
+</div>
+</h:outputLink>
+<div class="dropRight">
+	<div class="dropDownMenu">
+	<h:form>
+<h:graphicImage  url="images/dropBtn.png" id="imageMy" ></h:graphicImage>
+<p:contextMenu for="imageMy" id="context" event="click">                   
+      
+     <p:menuitem value="Edit Profile" url="edit-profile.xhtml" icon=" fa-user"/>
+     <p:menuitem value="Logout" url="#" icon="fa-remove"/>
+       
+ </p:contextMenu>
+ </h:form>
+<!--  <h:form> -->
+<!-- <h:graphicImage  url="images/dropBtn.png" id="imageMy" ></h:graphicImage> -->
+<!-- <p:contextMenu for="imageMy" id="context" event="click">                    -->
+<!--      <p:menuitem value="Save"  -->
+<!--                             icon="ui-icon-disk"/>   -->
+<!--      <p:menuitem value="Update"  -->
+<!--                             icon="ui-icon-arrowrefresh-1-w"/>   -->
+<!--      <p:menuitem value="Delete" icon="ui-icon-trash"   -->
+<!--                             ajax="false"/>   -->
+<!--      <p:menuitem value="Homepage" url="http://www.primefaces.org"   -->
+<!--                             icon="ui-icon-extlink"/>   -->
+<!--  </p:contextMenu> -->
+<!--  </h:form> -->
+	</div>
+	<div class="userName">
+		<p:outputLabel styleClass="user loginUserName" value="NTPC LTD,FARIDABAD"/><br />	
+		<p:outputLabel styleClass="title" value="(user)"/>
+	</div> 
+</div>
+</div>
+</h:body>
+</html>

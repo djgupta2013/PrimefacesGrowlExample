@@ -1,0 +1,158 @@
+body{
+	
+	background-color: #f7f7f8;
+	font-family: 'Calibri';
+}
+
+	.ui-inputfield{
+	width: 400px;
+	height: 30px;
+	}
+
+
+
+
+
+
+.checkBox{
+	margin-left: 34%;
+	margin-right: 34%;
+
+}
+.forgotpass{
+ position: center;
+}
+
+.headerMC {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+ }
+.headerMC a{
+	display: block;
+	text-align: center;
+	margin: 12px 0 13px 15px;
+    margin-top: 12px;
+    margin-right: 0px;
+    margin-bottom: 13px;
+    margin-left: 15px;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-color: currentcolor;
+	float: left; 
+}
+ .gailTagLine1{
+	font-size: 21px;
+color: #231f20;
+margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.gailTagLine2{
+	font-size: 12px;
+color: #231f20;
+margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.gailTagLine2 span{
+	color: #3fa2da;
+}
+
+.dropRight {
+    float: right;
+    margin: 30px 12px 0 0;
+        margin-top: 30px;
+        margin-right: 12px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+}
+.dropDownMenu {
+    float: right;
+
+padding: 0 0 0 17px;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 17px;
+
+cursor: pointer;
+}
+ .topDropDown {
+background: #fff;
+    background-color: rgb(255, 255, 255);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+background-color: rgb(255, 255, 255);
+background-position-x: 0%;
+background-position-y: 0%;
+background-repeat: repeat;
+background-attachment: scroll;
+background-image: none;
+background-size: auto auto;
+background-origin: padding-box;
+background-clip: border-box;
+position: absolute;
+right: 1px;
+margin-top: 51px;
+width: 150px;
+z-index: 10;
+box-shadow: 0px 0px 4px #ccc;
+display: none;
+}
+ .arrowDrop {
+    position: relative;
+    top: -20px;
+    float: right;
+    margin-right: 9px;
+}
+
+.dropRight .userName {
+    float: right;
+}
+.user {
+    font-size: 18px;
+    color: #3f3f3f;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+}
+.title {
+    font-size: 18px;
+    color: #ccc;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+}
+
+.footer{
+	text-align: center;
+    font-size: 14px;
+    color: #626262;
+    margin-top: 130px;}
